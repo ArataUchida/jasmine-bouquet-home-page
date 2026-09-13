@@ -8,7 +8,8 @@
 		"react-dom": "latest",
 		"vinext": "latest",
 		"react-server-dom-webpack": "latest",
-		"@vinext/cloudflare": "latest"
+		"@vinext/cloudflare": "latest",
+		"@jasmine/ui": "file:../../packages/ui"
 	},
 	"devDependencies": {
 		"@cloudflare/vite-plugin": "latest",
