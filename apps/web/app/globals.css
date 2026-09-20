@@ -20,6 +20,31 @@ a {
   font-family: 'Kaisei Opti', serif;
 }
 
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.fade-in.is-title {
+  animation-delay: 0s;
+}
+
+.fade-in.is-motion {
+  animation-delay: 0.3s;
+}
+
+.fade-in.is-description {
+  animation-delay: 0.6s;
+}
+
+.fade-in.is-images {
+  animation-delay: 0.9s;
+}
+
+.fade-in.is-button {
+  animation-delay: 1.2s;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -30,8 +55,4 @@ a {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-.animate-fadeIn {
-  animation: fadeIn 0.8s ease-out forwards;
 }
