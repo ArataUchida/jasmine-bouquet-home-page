@@ -1,7 +1,6 @@
 "use client"
 
 import FlowerSection from "./components/top/FlowerSection";
-import FooterList from "./components/top/TopFooter";
 import HeroSection from "./components/top/HeroSection";
 import Footer from "./components/top/TopFooter";
 
@@ -28,7 +27,7 @@ export default function Home() {
           "/top/sample.JPG",
         ]}
         buttonLabel="作品一覧・料金"
-        buttonHref="/wedding bouquet"
+        buttonHref="/weddingbouquet"
       />
 
       {/* フラワーギフト */}
