@@ -3,6 +3,7 @@
 import FlowerSection from "./components/top/FlowerSection";
 import FooterList from "./components/top/TopFooter";
 import HeroSection from "./components/top/HeroSection";
+import Footer from "./components/top/TopFooter";
 
 export default function Home() {
   return (
@@ -98,7 +99,7 @@ export default function Home() {
       />
 
       {/* フッター */}
-      <FooterList
+      <Footer
         items={[
           { label: "商品一覧", href: "#next" },
           { label: "花材紹介", href: "/floralmaterials" },

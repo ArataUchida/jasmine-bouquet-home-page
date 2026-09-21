@@ -28,7 +28,7 @@ export default function FlowerSection({
         >
             <img src={titleImg} alt="" className={`w-[80%] ${isVisible ? "fade-in is-title" : "opacity-0"}`} />
 
-            <p className={`font-kaisei text-[#786449] text-center text-base md:text-lg lg:text-xl leading-relaxed px-2 mt-2 delay-200 ${isVisible ? "fade-in is-description" : "opacity-0"}`}>
+            <p className={`font-kaisei text-[#786449] text-center text-base md:text-lg lg:text-xl leading-relaxed px-2 mt-2 ${isVisible ? "fade-in is-description" : "opacity-0"}`}>
                 {text.split("\n").map((line, i) => (
                     <span key={i}>
                         {line}
@@ -37,7 +37,7 @@ export default function FlowerSection({
                 ))}
             </p>
 
-            <div className={`grid grid-cols-3 gap-4 mt-10 w-[90%] delay-200 ${isVisible ? "fade-in is-images" : "opacity-0"}`}>
+            <div className={`grid grid-cols-3 gap-4 mt-10 w-[90%] ${isVisible ? "fade-in is-images" : "opacity-0"}`}>
                 {images.map((src, i) => (
                     <img key={i} src={src} alt="" className="w-full h-auto rounded-lg" />
                 ))}
