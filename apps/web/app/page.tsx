@@ -1,70 +1,114 @@
-const links = [
-  {
-    href: "https://github.com/cloudflare/vinext",
-    label: "vinext",
-  },
-  {
-    href: "https://developers.cloudflare.com/workers/",
-    label: "Workers",
-  },
-];
+"use client"
 
-export const revalidate = 300;
+import FlowerSection from "./components/top/FlowerSection";
+import HeroSection from "./components/top/HeroSection";
+import Footer from "./components/top/TopFooter";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-slate-50 px-6 py-10 text-slate-950">
-      <section className="mx-auto flex max-w-4xl flex-col gap-8">
-        <div className="flex flex-col gap-4">
-          <p className="text-sm font-semibold uppercase tracking-wide text-orange-600">
-            vinext + Cloudflare Workers
-          </p>
-          <h1 className="max-w-2xl text-4xl font-semibold leading-tight sm:text-5xl">
-            Build Next.js-style apps with Vite and deploy them to the edge.
-          </h1>
-          <p className="max-w-2xl text-lg leading-8 text-slate-700">
-            This App Router project is wired for vinext, Tailwind CSS, and Cloudflare Workers.
-          </p>
-        </div>
+    <>
+      {/* HeroSection */}
+      <HeroSection
+        bgImage="/top/top.PNG"
+        centerImage="/top/swipetoview.PNG"
+        scrollTargetId="next"
+      />
 
-        <div className="grid gap-4 sm:grid-cols-3">
-          <div className="rounded-lg border border-slate-200 bg-white p-5">
-            <h2 className="font-semibold">Develop</h2>
-            <p className="mt-2 text-sm leading-6 text-slate-600">Run the vinext dev server locally.</p>
-            <code className="mt-4 block rounded bg-slate-100 px-3 py-2 text-sm">pnpm run dev</code>
-          </div>
-          <div className="rounded-lg border border-slate-200 bg-white p-5">
-            <h2 className="font-semibold">Build</h2>
-            <p className="mt-2 text-sm leading-6 text-slate-600">Create Worker-ready production output.</p>
-            <code className="mt-4 block rounded bg-slate-100 px-3 py-2 text-sm">pnpm run build</code>
-          </div>
-          <div className="rounded-lg border border-slate-200 bg-white p-5">
-            <h2 className="font-semibold">Deploy</h2>
-            <p className="mt-2 text-sm leading-6 text-slate-600">Ship the generated Worker with Wrangler.</p>
-            <code className="mt-4 block rounded bg-slate-100 px-3 py-2 text-sm">pnpm run deploy</code>
-          </div>
-        </div>
+      {/* ウエディングブーケ */}
+      <FlowerSection
+        titleImg="/top/weddingbouquet_title.PNG"
+        text={`Jasmine bouquetでは様々なデザインのブーケを製作しています。\n花嫁様のご要望に合わせたフルオーダーも可能です!`}
+        images={[
+          "/top/sample.JPG",
+          "/top/sample.JPG",
+          "/top/sample.JPG",
+          "/top/sample.JPG",
+          "/top/sample.JPG",
+          "/top/sample.JPG",
+        ]}
+        buttonLabel="作品一覧・料金"
+        buttonHref="/weddingbouquet"
+      />
 
-        <nav className="flex flex-wrap gap-3">
-          {links.map((link) => (
-            <a
-              className="rounded-md border border-slate-300 bg-white px-4 py-2 text-sm font-medium hover:bg-slate-100"
-              href={link.href}
-              key={link.href}
-              rel="noreferrer"
-              target="_blank"
-            >
-              {link.label}
-            </a>
-          ))}
-          <a
-            className="rounded-md border border-slate-300 bg-white px-4 py-2 text-sm font-medium hover:bg-slate-100"
-            href="/api/hello"
-          >
-            API route
-          </a>
-        </nav>
-      </section>
-    </main>
+      {/* フラワーギフト */}
+      <FlowerSection
+        titleImg="/top/flowergift_title.PNG"
+        text={`Jasmine bouquetでは様々なデザインのブーケを
+          製作しています。
+          花嫁様のご要望に合わせたフルオーダーも可能です!`}
+        images={[
+          "/top/sample.JPG",
+          "/top/sample.JPG",
+          "/top/sample.JPG",
+          "/top/sample.JPG",
+          "/top/sample.JPG",
+          "/top/sample.JPG",
+        ]}
+        buttonLabel="作品一覧・料金"
+        buttonHref="/flowergift"
+      />
+
+      {/*  ヘアピース */}
+      <FlowerSection
+        titleImg="/top/hairpiece_title.PNG"
+        text={`ブーケやドレスに合わせたヘアピース
+          お花だけでなく、パールや水引きも使用しています`}
+        images={[
+          "/top/sample.JPG",
+          "/top/sample.JPG",
+          "/top/sample.JPG",
+          "/top/sample.JPG",
+          "/top/sample.JPG",
+          "/top/sample.JPG",
+        ]}
+        buttonLabel="作品一覧・料金"
+        buttonHref="/hairpiece"
+      />
+
+      {/*  ウェルカムスペース */}
+      <FlowerSection
+        titleImg="/top/wellcomespace_title.PNG"
+        text={`ウェルカムスペースや受付で飾れる装花も製作しています。\n作品一覧にないデザインをご希望の場合は\nフルオーダーでお作りすることも可能です！`}
+        images={[
+          "/top/sample.JPG",
+          "/top/sample.JPG",
+          "/top/sample.JPG",
+          "/top/sample.JPG",
+          "/top/sample.JPG",
+          "/top/sample.JPG",
+        ]}
+        buttonLabel="作品一覧・料金"
+        buttonHref="/welcomespace"
+      />
+
+      {/*  インテリアフラワー */}
+      <FlowerSection
+        titleImg="/top/interiorflower_title.PNG"
+        text={`ご自宅に合わせたインテリアフラワーや季節のアイテムなど\nたくさんの雑貨をお作りしています。\n様々なご要望に可能な限り対応させて頂きます！`}
+        images={[
+          "/top/sample.JPG",
+          "/top/sample.JPG",
+          "/top/sample.JPG",
+          "/top/sample.JPG",
+          "/top/sample.JPG",
+          "/top/sample.JPG",
+        ]}
+        buttonLabel="作品一覧・料金"
+        buttonHref="/interiorflower"
+      />
+
+      {/* フッター */}
+      <Footer
+        items={[
+          { label: "商品一覧", href: "#next" },
+          { label: "花材紹介", href: "/floralmaterials" },
+          { label: "オーダーブーケについて", href: "/orderbouquet" },
+          { label: "無料見学・ブーケ合わせ", href: "/freeconsultation" },
+          { label: "デザイナー紹介", href: "/designer" },
+          { label: "ご注文・お問い合わせ", href: "/contact" },
+          { label: "お支払い方法について", href: "/paymentmethods" },
+        ]}
+      />
+    </>
   );
 }
