@@ -1,6 +1,3 @@
-import Pagination from "../components/product/Pagination";
-import ProductCard from "../components/product/ProductCard";
-import { SlidersHorizontal } from "lucide-react";
 import { getWeddingBouquets } from "../services/weddingBouquets";
 import CommonProductPage from "../components/product/CommonProductPage";
 
