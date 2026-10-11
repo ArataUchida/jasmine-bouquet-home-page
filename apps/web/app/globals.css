@@ -20,6 +20,10 @@ a {
   font-family: 'Kaisei Opti', serif;
 }
 
+.font-sansJP {
+  font-family: 'Source Han Sans JP', serif;
+}
+
 .fade-in {
   opacity: 0;
   animation: fadeIn 1s ease-out forwards;
