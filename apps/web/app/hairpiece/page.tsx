@@ -1,4 +1,4 @@
-import CommonProductPage from "../components/product/CommonProductPage";
+import CommonProductPage from "../_components/product/CommonProductPage";
 import { getHairpiece } from "../services/hairPiece";
 
 export default async function HairpiecePage({

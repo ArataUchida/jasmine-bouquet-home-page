@@ -1,4 +1,4 @@
-import CommonProductPage from "../components/product/CommonProductPage";
+import CommonProductPage from "../_components/product/CommonProductPage";
 import { getInteriorFlowers } from "../services/interiorFlower";
 
 export default async function InteriorFlowerPage({

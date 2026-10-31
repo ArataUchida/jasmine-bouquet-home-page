@@ -1,5 +1,5 @@
 import { getWeddingBouquets } from "../services/weddingBouquets";
-import CommonProductPage from "../components/product/CommonProductPage";
+import CommonProductPage from "../_components/product/CommonProductPage";
 
 export default async function WeddingBouquetPage({
   searchParams,
