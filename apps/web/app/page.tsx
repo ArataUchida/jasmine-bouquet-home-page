@@ -1,8 +1,8 @@
 "use client"
 
-import FlowerSection from "./components/top/FlowerSection";
-import HeroSection from "./components/top/HeroSection";
-import Footer from "./components/top/TopFooter";
+import FlowerSection from "./_components/top/FlowerSection";
+import HeroSection from "./_components/top/HeroSection";
+import Footer from "./_components/top/TopFooter";
 
 export default function Home() {
   return (
