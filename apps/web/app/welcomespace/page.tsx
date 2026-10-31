@@ -1,4 +1,4 @@
-import CommonProductPage from "../components/product/CommonProductPage";
+import CommonProductPage from "../_components/product/CommonProductPage";
 import { getWelcomeSpace } from "../services/welcomeSpace";
 
 export default async function WeddingBouquetPage({

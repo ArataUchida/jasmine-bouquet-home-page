@@ -1,4 +1,4 @@
-import CommonProductPage from "../components/product/CommonProductPage";
+import CommonProductPage from "../_components/product/CommonProductPage";
 import { getFlowerGifts } from "../services/flowerGifts";
 
 export default async function FlowerGiftPage({
